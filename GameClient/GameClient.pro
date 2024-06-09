@@ -11,66 +11,72 @@ TEMPLATE = app
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    applywid.cpp \
-    cdwidget.cpp \
-    clickedbtn.cpp \
-    clickedlabel.cpp \
-    customizeedit.cpp \
-    friendslist.cpp \
-    gamedialog.cpp \
-    global.cpp \
-    listitembase.cpp \
-    logindialog.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    myinputdialog.cpp \
-    player.cpp \
-    registerdialog.cpp \
-    replaywid.cpp \
-    resetdialog.cpp \
-    sqlitemgr.cpp \
-    tcpmgr.cpp \
-    timerbtn.cpp \
-    userwid.cpp \
-    verifycodelabel.cpp
-
-HEADERS += \
-    applywid.h \
-    cdwidget.h \
-    clickedbtn.h \
-    clickedlabel.h \
-    customizeedit.h \
-    friendslist.h \
-    gamedialog.h \
-    global.h \
-    listitembase.h \
-    logindialog.h \
-    mainwindow.h \
-    myinputdialog.h \
-    player.h \
-    registerdialog.h \
-    replaywid.h \
-    resetdialog.h \
-    sqlitemgr.h \
-    tcpmgr.h \
-    timerbtn.h \
-    userwid.h \
-    verifycodelabel.h
+    src/applywid.cpp \
+    src/cdwidget.cpp \
+    src/clickedbtn.cpp \
+    src/clickedlabel.cpp \
+    src/customizeedit.cpp \
+    src/friendslist.cpp \
+    src/gamedialog.cpp \
+    src/global.cpp \
+    src/listitembase.cpp \
+    src/logindialog.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
+    src/myinputdialog.cpp \
+    src/player.cpp \
+    src/registerdialog.cpp \
+    src/replaywid.cpp \
+    src/replyitem.cpp \
+    src/resetdialog.cpp \
+    src/sqlitemgr.cpp \
+    src/tcpmgr.cpp \
+    src/timerbtn.cpp \
+    src/userwid.cpp \
+    src/verifycodelabel.cpp
 
 FORMS += \
-    applywid.ui \
-    gamedialog.ui \
-    logindialog.ui \
-    mainwindow.ui \
-    registerdialog.ui \
-    replaywid.ui \
-    resetdialog.ui \
-    userwid.ui
+    inc/logindialog.ui \
+    inc/registerdialog.ui \
+    ui/gamedialog.ui \
+    ui/logindialog.ui \
+    ui/logindialog.ui \
+    ui/registerdialog.ui \
+    ui/registerdialog.ui \
+    ui/applywid.ui \
+    ui/gamedialog.ui \
+    ui/logindialog.ui \
+    ui/mainwindow.ui \
+    ui/registerdialog.ui \
+    ui/replaywid.ui \
+    ui/replyitem.ui \
+    ui/resetdialog.ui \
+    ui/userwid.ui
 
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+HEADERS += \
+    inc/applywid.h \
+    inc/cdwidget.h \
+    inc/clickedbtn.h \
+    inc/clickedlabel.h \
+    inc/customizeedit.h \
+    inc/friendslist.h \
+    inc/gamedialog.h \
+    inc/gamedialog.h \
+    inc/global.h \
+    inc/listitembase.h \
+    inc/logindialog.h \
+    inc/mainwindow.h \
+    inc/myinputdialog.h \
+    inc/player.h \
+    inc/registerdialog.h \
+    inc/replaywid.h \
+    inc/replyitem.h \
+    inc/resetdialog.h \
+    inc/sqlitemgr.h \
+    inc/tcpmgr.h \
+    inc/timerbtn.h \
+    inc/userwid.h \
+    inc/verifycodelabel.h
 
 RESOURCES += \
     rc.qrc

@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CF822485-9DA9-4C27-9CEE-A593CF8E597D}</ProjectGuid>
+    <ProjectGuid>{26202DE9-C9EA-4909-B2A3-5F97BFD935ED}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
@@ -37,7 +37,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>6.2.3_msvc2019_64</QtInstall>
-    <QtModules>core</QtModules>
+    <QtModules>core;network;sql</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -92,18 +92,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="email.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="mysqlmgr.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="server.cpp" />
+    <ClCompile Include="src\email.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mysqlmgr.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\server.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="email.h" />
-    <ClInclude Include="global.h" />
-    <ClInclude Include="mysqlmgr.h" />
-    <QtMoc Include="server.h" />
-    <QtMoc Include="player.h" />
+    <ClInclude Include="inc\email.h" />
+    <ClInclude Include="inc\global.h" />
+    <ClInclude Include="inc\mysqlmgr.h" />
+    <QtMoc Include="inc\server.h" />
+    <QtMoc Include="inc\player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

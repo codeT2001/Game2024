@@ -2,14 +2,17 @@
     <qresource prefix="/">
         <file>images/add_friend_hover.png</file>
         <file>images/add_friend_normal.png</file>
+        <file>images/addtip.png</file>
+        <file>images/apply.png</file>
+        <file>images/arowdown.png</file>
+        <file>images/close.png</file>
+        <file>images/close_search.png</file>
         <file>images/search.png</file>
         <file>images/unvisible.png</file>
         <file>images/unvisible_hover.png</file>
         <file>images/visible.png</file>
         <file>images/visible_hover.png</file>
-        <file>styles/styleSheet.qss</file>
-        <file>images/close.png</file>
-        <file>images/apply.png</file>
         <file>images/wzq.png</file>
+        <file>styles/styleSheet.qss</file>
     </qresource>
 </RCC>

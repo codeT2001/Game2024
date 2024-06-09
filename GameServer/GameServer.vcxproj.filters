@@ -23,38 +23,38 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\email.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mysqlmgr.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="player.cpp">
+    <ClCompile Include="src\mysqlmgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="server.cpp">
+    <ClCompile Include="src\player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="email.cpp">
+    <ClCompile Include="src\server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="global.h">
+    <ClInclude Include="inc\email.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mysqlmgr.h">
+    <ClInclude Include="inc\global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="email.h">
+    <ClInclude Include="inc\mysqlmgr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="player.h">
+    <QtMoc Include="inc\player.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="server.h">
+    <QtMoc Include="inc\server.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
